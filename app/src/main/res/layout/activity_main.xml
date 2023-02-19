@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:id="@+id/v1"
+        android:background="@color/design_default_color_error"
+        android:layout_marginTop="110sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="5sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/v2"
+
+        />
+
+    <View
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:id="@+id/v2"
+        android:background="@color/black"
+        android:layout_marginTop="110sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="5sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/v1"
+        app:layout_constraintEnd_toStartOf="@id/v3"
+
+        />
+
+    <View
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:id="@+id/v3"
+        android:background="@color/design_default_color_error"
+        android:layout_marginTop="110sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/v2"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
+    <View
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:id="@+id/v4"
+        android:background="@color/teal_200"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp"
+        app:layout_constraintTop_toBottomOf="@id/v1"
+        app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintBottom_toBottomOf="@id/gdh1"
+
+        />
+    <View
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:id="@+id/v5"
+        android:background="@color/teal_200"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp"
+        app:layout_constraintTop_toBottomOf="@id/v3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/gdh1"
+        />
+    <View
+        android:layout_width="100sp"
+        android:layout_height="60sp"
+        android:id="@+id/v6"
+        android:background="@color/design_default_color_error"
+        android:layout_marginTop="35sp"
+        android:layout_marginStart="80sp"
+        android:layout_marginEnd="80sp"
+        app:layout_constraintTop_toBottomOf="@id/v2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gdh1"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".55"
+
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.38"
+
+        />
+    <View
+        android:layout_width="110sp"
+        android:layout_height="30sp"
+        android:id="@+id/v7"
+        android:background="@color/teal_700"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toTopOf="@id/gdh1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/gdv1"
+
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdh2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.575"
+
+        />
+    <Switch
+        android:layout_width="35sp"
+        android:layout_height="20sp"
+        android:id="@+id/s1"
+        android:background="@color/purple_200"
+        android:layout_marginStart="75sp"
+        android:layout_marginTop="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/gdh2"
+        app:layout_constraintEnd_toEndOf="@id/gdv1"
+        />
+    <View
+        android:layout_width="90sp"
+        android:layout_height="30sp"
+        android:id="@+id/v8"
+        android:background="@color/teal_700"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/gdv1"
+        app:layout_constraintTop_toBottomOf="@id/v7"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
